@@ -1,0 +1,21 @@
+class Animal:
+    def __init__(self, name, age, weight):
+        self.name = name
+        self.age = age
+        self.weight = weight
+
+    def eat(self, food):
+        self.weight += food
+        return self.weight
+
+    def info(self):
+        print(f"{self.name}, {self.age}, {self.weight} kg")
+
+class CAT(Animal):
+
+    def __init__(self, name, age, aeight, breed):
+        super().__init__(name, age, weight)
+        self. breed = breed
+
+    def bark(self):
+        print("MEOW!")
